@@ -3,8 +3,8 @@
 //  @brief   ATLAS plotting style for ROOT canvases.
 //
 //  Provides two entry points:
-//    - Style()    — constructs and returns a configured TStyle object.
-//    - SetStyle() — applies that style to the current ROOT session.
+//    - AtlasStyle()    — constructs and returns a configured TStyle object.
+//    - SetAtlasStyle() — applies that style to the current ROOT session.
 //
 //  Covers fonts, margins, tick marks, color palette, stat/title box
 //  visibility, and all other graphical settings required for
@@ -12,15 +12,15 @@
 //
 //  Usage:
 //  @code
-//    #include "AtlasStyle.h"
-//    SetStyle();          // call once before creating any canvas
+//    #include "Style.h"
+//    SetAtlasStyle();          // call once before creating any canvas
 //  @endcode
 //
 //  Based on the standard ATLAS plotting conventions.
 //
 
-#ifndef ATLASSTYLE_H
-#define ATLASSTYLE_H
+#ifndef STYLE_H
+#define STYLE_H
 
 #include "TStyle.h"
 
@@ -37,7 +37,7 @@
 /// by ROOT's global style registry (gROOT).
 ///
 /// @return Pointer to the newly created and registered TStyle.
-TStyle* Style();
+TStyle* AtlasStyle();
 
 /// @brief Apply the ATLAS style to the current ROOT session.
 ///
@@ -49,4 +49,4 @@ TStyle* Style();
 /// any TCanvas or TH1, to ensure all subsequent plots use ATLAS style.
 void SetAtlasStyle();
 
-#endif  // ATLASSTYLE_H
+#endif  // STYLE_H
