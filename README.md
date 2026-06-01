@@ -1,6 +1,6 @@
 # Computational-QCD
 
-# Computational QCD: Extraction of the Running Strong Coupling Constant
+# Computational QCD: Computational QCD framework for extracting the running strong coupling constant from ATLAS multi-jet measurements.
 
 ## Overview
 
