@@ -71,42 +71,29 @@ Utility functions for graph manipulation, uncertainty bands, ratio calculations,
 
 ## Scientific Applications
 
-This framework is intended for:
+## Analysis Workflow
 
-* Precision QCD studies
-* Strong coupling constant extraction
-* Multi-jet phenomenology
-* PDF uncertainty studies
-* Statistical inference in particle physics
-* Computational high-energy physics analyses
-
----
-##Analysis workflow 
+```text
 ATLAS Multi-Jet Data
-         |
-         v
-     HEPData
-         |
-         v
-  Experimental Covariance
-         |
-         +----------------+
-         |                |
-         v                v
- Theory Predictions   PDF Variations
-   (MSHT20 PDFs)      Scale Variations
-         |                |
-         +----------------+
-                  |
-                  v
-        χ² Minimization
-       (TMinuit/MIGRAD)
-                  |
-                  v
-       αs Extraction
-                  |
-                  v
-      Running of αs(Q)
+        |
+        v
+HEPData Input
+        |
+        v
+Experimental Covariance
+        |
+        v
+Theory Predictions + PDF/Scale Variations
+        |
+        v
+χ² Minimization with TMinuit/MIGRAD
+        |
+        v
+αs Extraction
+        |
+        v
+Running of αs(Q)
+
 
 
 ## Acknowledgments and Disclaimer
