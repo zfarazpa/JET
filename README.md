@@ -80,6 +80,33 @@ This framework is intended for:
 * Computational high-energy physics analyses
 
 ---
+##Analysis workflow 
+ATLAS Multi-Jet Data
+         |
+         v
+     HEPData
+         |
+         v
+  Experimental Covariance
+         |
+         +----------------+
+         |                |
+         v                v
+ Theory Predictions   PDF Variations
+   (MSHT20 PDFs)      Scale Variations
+         |                |
+         +----------------+
+                  |
+                  v
+        χ² Minimization
+       (TMinuit/MIGRAD)
+                  |
+                  v
+       αs Extraction
+                  |
+                  v
+      Running of αs(Q)
+
 
 ## Acknowledgments and Disclaimer
 
